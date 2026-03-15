@@ -4,9 +4,7 @@ LaTeX source for my curriculum vitae (résumé), built with the [AltaCV](https:/
 
 ## Contents
 
-- **main.tex** — Main document: header, summary, work experience, education, hobbies.
-- **page1sidebar.tex** — Sidebar content for page 1 (skills, projects).
-- **page2sidebar.tex** — Sidebar content for page 2 (additional projects, languages).
+- **main.tex** — Single-file CV: header, summary, work experience, education, hobbies, and all sidebar content (skills, projects, languages) inlined.
 - **altacv.cls** — AltaCV document class (v1.1.3).
 - **MYPIC.jpg** — Profile photo (required for `\photo`).
 
@@ -36,7 +34,7 @@ If `pdflatex` is not in your PATH, use the full path:
 ## Customization
 
 - **Photo:** Replace `MYPIC.jpg` with your image (or add `MYPIC.png`); the template uses `\photo{3cm}{MYPIC}`.
-- **Content:** Edit `main.tex` for the main column; `page1sidebar.tex` and `page2sidebar.tex` for the sidebars.
+- **Content:** Edit `main.tex` for both the main column and the sidebars (see comments in the file).
 - **Colors:** In `main.tex`, the `\definecolor` and `\colorlet` lines set the theme (e.g. `darkblue`, `Mulberry`).
 
 ## Output
