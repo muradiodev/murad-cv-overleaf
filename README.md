@@ -1,33 +1,48 @@
-# AltaCV, yet another LaTeX CV/Résumé class
+# Murad Huseynov — CV / Résumé
 
-v1.1.3 (30 April 2017), by LianTze Lim (liantze@gmail.com)
+LaTeX source for my curriculum vitae (résumé), built with the [AltaCV](https://github.com/liantze/AltaCV) class.
 
-(Thanks to [Nur](https://github.com/nurh) for the name.)
+## Contents
 
-It all started with this:
+- **main.tex** — Main document: header, summary, work experience, education, hobbies.
+- **page1sidebar.tex** — Sidebar content for page 1 (skills, projects).
+- **page2sidebar.tex** — Sidebar content for page 2 (additional projects, languages).
+- **altacv.cls** — AltaCV document class (v1.1.3).
+- **MYPIC.jpg** — Profile photo (required for `\photo`).
 
-[<img src="tweet-that-started-this.png" width="500px">]
-(https://twitter.com/Leonduck/status/764281546408923136)
+## Requirements
 
-Leonardo was talking about a [résumé of Marissa Mayer that Business Insider put together](http://www.businessinsider.my/a-sample-resume-for-marissa-mayer-2016-7/) using [enhancv.com](https://enhancv.com).
-I _knew_ I had to do something about it. And so AltaCV was born.
+- A LaTeX distribution: [MiKTeX](https://miktex.org/) (Windows) or [TeX Live](https://www.tug.org/texlive/).
+- Packages used: `fontawesome`, `geometry`, `lato`, `tikz`, `tcolorbox`, `hyperref`, `biblatex` (and dependencies). MiKTeX/TeX Live will install missing packages on first run if configured to do so.
 
-## Samples
+## Build
 
-This is how the re-created résumé looks like ([view/open on Overleaf](https://www.overleaf.com/read/gtqfpbwncfvp)):
+From this directory:
 
-<img src="mmayer.png" alt="Marissa Mayer's résumé, re-created with AltaCV" width="600px">
+```bash
+pdflatex -interaction=nonstopmode main.tex
+```
 
-Though if you're creating your own CV/résumé, you'd probably prefer using the basic template ([view/open on Overleaf](https://www.overleaf.com/read/trgqjpwnmtgv)):
+Run twice if you change cross-references. Output: **main.pdf**.
 
-<img src="sample.png" alt="sample barebones AltaCV template" width="600px">
+### Windows (MiKTeX)
 
+If `pdflatex` is not in your PATH, use the full path:
 
-## Requirements and Compilation
+```powershell
+& "$env:LOCALAPPDATA\Programs\MiKTeX\miktex\bin\x64\pdflatex.exe" -interaction=nonstopmode main.tex
+```
 
-* pdflatex + biber + pdflatex
-* AltaCV uses [`fontawesome`](http://www.ctan.org/pkg/fontawesome) and [`academicons`](http://www.ctan.org/pkg/academicons); they're included in both TeX Live 2016 and MikTeX 2.9.
-* Loading `academicons` is optional: enable it by adding the `academicons` option to `\documentclass`.
-* Can now be compiled with pdflatex, XeLaTeX and LuaLaTeX!
-* However if you're using `academicons`, you _must_ use either XeLaTeX or LuaLaTeX. If the doc then compiles but the icons don't show up in the output PDF, try compiling with LuaLaTeX instead.
-* The samples here use the [Lato](http://www.latofonts.com/lato-free-fonts/) font.
+## Customization
+
+- **Photo:** Replace `MYPIC.jpg` with your image (or add `MYPIC.png`); the template uses `\photo{3cm}{MYPIC}`.
+- **Content:** Edit `main.tex` for the main column; `page1sidebar.tex` and `page2sidebar.tex` for the sidebars.
+- **Colors:** In `main.tex`, the `\definecolor` and `\colorlet` lines set the theme (e.g. `darkblue`, `Mulberry`).
+
+## Output
+
+The PDF is a two-page CV with a main column (work experience, education, hobbies) and a sidebar (skills, projects, languages).
+
+## License
+
+The CV content is personal. The AltaCV class is distributed under the [LaTeX Project Public License](https://www.latex-project.org/lppl/).
