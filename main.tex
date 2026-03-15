@@ -1,0 +1,138 @@
+\documentclass[10pt,a4paper]{altacv}
+
+\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=0.7cm,bottom=1.25cm,footskip=2\baselineskip}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[default]{lato}
+\usepackage[skins]{tcolorbox}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=blue,
+    pdftitle={Murad Huseynov - Founder \& Entrepreneur},
+    pdfpagemode=FullScreen,
+}
+
+\definecolor{darkblue}{HTML}{00394d}
+\definecolor{Mulberry}{HTML}{005c99}
+\definecolor{SlateGrey}{HTML}{000000}
+\definecolor{LightGrey}{HTML}{333333}
+\colorlet{heading}{darkblue}
+\colorlet{accent}{Mulberry}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+\begin{document}
+\name{Murad Huseynov}
+\tagline{Founder, Entrepreneur, Software Engineer}
+\photo{3cm}{MYPIC}
+\personalinfo{
+  \email{\href{mailto:muradace@gmail.com}{muradace@gmail.com}}
+  \phone{\href{https://wa.me/+491702052525}{+49 170 2052525}}
+  \location{Berlin, Germany}
+  \linkedin{\href{https://www.linkedin.com/in/muradiodev}{muradiodev}}
+  \github{\href{https://github.com/muradiodev}{muradiodev}}
+}
+
+\begin{fullwidth}
+\makecvheader
+\vspace{-2mm}
+\textbf{Founder} and \textbf{entrepreneur} focused on turning ideas into products and scaling teams. I build companies from the ground up—product vision, go-to-market, and execution—and lead cross-functional teams to deliver. Strong in \textbf{product thinking}, \textbf{strategy}, and \textbf{getting things done}; technical background enables me to ship and iterate fast.
+\end{fullwidth}
+
+\cvsection[page1sidebar]{\faFileText \; Work Experience}
+
+\cvevent{\textbf{Founder}}{\textbf{Hubpoint.Ai}}{\textbf{02/2025} -- \textbf{Present}}{\;\;\;\;\;\;\;\; \textbf{Berlin, Dubai}}
+\begin{itemize}
+    \item Brought an AI-powered scheduling and business management platform for SMBs from concept to live production, owning architecture, product, UX, billing, and go-to-market.
+    \item Head four functions (Engineering, Product, Marketing, Sales) and a 15-person team; define strategy, drive execution, and hit delivery targets.
+    \item Established the technical foundation (Flask, PostgreSQL, React, Vite, Docker) for scalability, security, and enterprise use.
+    \item Delivered AI-powered scheduling with NLP-based intent detection, conflict resolution, and workflows that support both automated and manual planning.
+    \item Rolled out the full operations stack: auth, subscription tiers, Stripe billing, events, QR ticketing, analytics, and PDF/Excel exports; kept quality high with automated and load tests, CI/CD, and API monitoring.
+    \item \textbf{Achieved:} Product in production, team scaled to 15, platform built for EU and MENA as an AI-powered scheduling and business management tool.
+\end{itemize}
+
+
+\divider
+\cvevent{\textbf{Tech Lead}}{\textbf{Capgemini}}{\textbf{11/2023} -- \textbf{12/2025}}{\;\;\;\;\;\;\;\; \textbf{Frankfurt am Main, Germany}}
+\begin{itemize}
+    \item Built a web app for knowledge and information management and integrated GenAI to improve search and retrieval.
+    \item Delivered a responsive UI and a Python-based REST API backend.
+    \item Implemented the backend in Flask with local and cloud AI models for GenAI features.
+    \item \textbf{Achieved:} Knowledge management platform with GenAI-powered retrieval and a stable, maintainable stack.
+\end{itemize}
+
+\divider
+
+\cvevent{\textbf{Senior Software Engineer}}{\textbf{Axitera GmbH}}{\textbf{11/2022 -- 11/2023}}{\;\;\;\;\;\;\;\; \textbf{Frankfurt am Main, Germany}}
+\begin{itemize}
+    \item Delivered the cloud workforce management product Obolus: HR time tracking, corporate benefits, and travel expense management.
+    \item Built microservices and Excel export endpoints for monthly reporting.
+    \item Configured test environments, added test coverage, and resolved defects to raise product quality.
+    \item \textbf{Achieved:} Shipped Obolus with core HR and expense features and reliable reporting.
+\end{itemize}
+
+\divider
+
+\cvevent{\textbf{Part-time Software Engineer}}{\textbf{Hacon - A Siemens Company}}{\textbf{03/2022 -- 10/2022}}{\;\;\;\;\;\;\;\; \textbf{Hannover, Germany}}
+\begin{itemize}
+    \item Added new microservice modules and implemented tests across the codebase.
+    \item Worked on public and private transport systems handling ~100M door-to-door route calculations per day.
+    \item Supported the implementation of the German Government 9-euro ticket decision process.
+    \item \textbf{Achieved:} Delivered microservices and tests for high-scale routing; supported a major public policy rollout.
+\end{itemize}
+
+\divider
+
+
+
+\cvevent{\textbf{Java Software Engineer}}{\textbf{Centogene AG}}{\textbf{10/2018 -- 10/2019}}{\;\;\;\;\;\;\;\;\textbf{Rostock, Germany}}
+\begin{itemize}
+    \item Wrote and maintained unit tests and refactored code for CentoMD and CentoMDx.
+    \item Built a web application with Java 8, Spring Boot, MySQL, JUnit, and JavaScript.
+    \item Contributed to systems aggregating phenotype and genotype data to support treatment recommendations for clinicians.
+    \item \textbf{Achieved:} Improved test coverage and reliability of medical software; delivered a production web system.
+\end{itemize}
+
+\divider
+
+\cvevent{\textbf{Java Software Engineer}}{\textbf{The State Statistical Committee of the Republic of Azerbaijan}}{\textbf{08/2014 -- 08/2017}}{\;\;\;\;\;\;\;\;\textbf{Baku, Azerbaijan}}
+\begin{itemize}
+    \item Delivered government systems in the Statistical Programming Division: monthly and annual web applications for statistical data.
+    \item Implemented SQL in Java to export outputs to PDF, XLS, and WebView.
+    \item Built a population index used for inflation rate calculation.
+    \item \textbf{Achieved:} Shipped production systems for national statistics and inflation measurement.
+\end{itemize}
+
+\cvsection{\faGraduationCap \; Education}
+
+\cvevent{\textbf{M.Sc - Information Technologies}}{04/2018 -- 09/2022}{\textbf{Rostock University}}{\;\;\;\;Electrical Engineering and Information Technology}
+
+\divider
+
+\cvevent{\textbf{M.Sc - Information Technologies}}{09/2016 -- 03/2018}{\textbf{Azerbaijan State Oil and Industry University}}{\;\;\;\;Electronics and Telecommunication Engineering}
+
+\divider
+
+\cvevent{\textbf{B.Sc - Information Technologies}}{09/2012 -- 06/2016}{\textbf{Azerbaijan State Oil and Industry University}}{\;\;\;\;Electronics and Telecommunication Engineering}
+
+
+\cvsection{\faHeart \;  Hobbies}
+
+\cvtag{Entrepreneurship}
+\cvtag{Startups}
+\cvtag{Conceptualizing product ideas}
+\cvtag{Traveling}
+\cvtag{Cooking}
+\cvtag{Healthy Lifestyle}
+\cvtag{Reading}
+\cvtag{Music}
+\cvtag{Outdoor activities}
+
+\end{document}
